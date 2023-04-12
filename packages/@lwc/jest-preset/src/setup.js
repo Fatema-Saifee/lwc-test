@@ -20,9 +20,9 @@ if (!nativeShadow) {
         // In newer versions of @lwc/synthetic-shadow (>=3.0.0), the above file does not exist,
         // and you can `require()` normally.
         if (err && err.code === 'MODULE_NOT_FOUND') {
-            require('@lwc/synthetic-shadow')
+            require('@lwc/synthetic-shadow');
         } else {
-            throw err
+            throw err;
         }
     }
 }
